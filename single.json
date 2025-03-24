@@ -1,0 +1,60 @@
+{
+  "account_address": "0x498da5986557f86d27c537600634f7a31c23db55",
+  "buy": [
+    {
+      "amount": "5291479820627803000",
+      "type": "NATIVE"
+    }
+  ],
+  "chain": {
+    "id": "eip155:13371",
+    "name": "imtbl-zkevm-mainnet"
+  },
+  "created_at": "2025-03-13T18:52:35.052953Z",
+  "end_at": "2026-03-13T18:52:20Z",
+  "fees": [
+    {
+      "amount": "52914798206278030",
+      "recipient_address": "0x73b6616316e6048284658f6bda58c17eb40db542",
+      "type": "MAKER_ECOSYSTEM"
+    },
+    {
+      "amount": "105829596412556060",
+      "recipient_address": "0xb2f4dcc6b02293088d3362e78a4af0cd07c38b49",
+      "type": "PROTOCOL"
+    },
+    {
+      "amount": "396860986547085225",
+      "recipient_address": "0x99f1117f13e072b299942037e6a5d1469912b47a",
+      "type": "ROYALTY"
+    }
+  ],
+  "fill_status": {
+    "denominator": "0",
+    "numerator": "0"
+  },
+  "id": "019590d9-e981-1a76-e58f-115ffd7feed9",
+  "order_hash": "0xf04da7941a698bd7bf5e4b40b8639292c751fa568a705814662e775a23e71c81",
+  "protocol_data": {
+    "counter": "0",
+    "order_type": "FULL_RESTRICTED",
+    "seaport_address": "0x6c12ad6f0bd274191075eb2e78d7da5ba6453424",
+    "seaport_version": "1.5",
+    "zone_address": "0x1004f9615e79462c711ff05a386bdba91a7628c3"
+  },
+  "salt": "0xc13a563901c148bc",
+  "sell": [
+    {
+      "contract_address": "0x34a0321e464f7afba27b5d640707ab01660705bd",
+      "token_id": "19498",
+      "type": "ERC721"
+    }
+  ],
+  "signature": "0x0002000126f80aae3145c09d8749baa36d6f697e6ca43221a525fb8980ddc458c80c3c900cf6c196f60e0b9606ff4fdcc953f6d9121e75ad1287a04b3f8b687861a7b54c1c020201cff469e561d9dce5b1185cd2ac1fa961f8fbde61004344599bb37a184a34fd5e760b28ff18214243ea3e1b6b821c102dd503b736fcf33bd07753365d928e91f0e25bb39c63fa4d56c6a9eb72c6aab88d637d60325d4a1b0103",
+  "start_at": "2025-03-13T18:52:20Z",
+  "status": {
+    "name": "ACTIVE"
+  },
+  "type": "LISTING",
+  "updated_at": "2025-03-13T18:52:35.308994Z"
+}
