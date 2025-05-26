@@ -1,0 +1,87 @@
+[
+  {
+    "created": "2025-05-26T10:21:52.421344Z",
+    "buy": [
+      {
+        "amount": "118421053",
+        "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+        "type": "ERC20"
+      }
+    ],
+    "sell": [
+      {
+        "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+        "token_id": "863",
+        "type": "ERC721"
+      }
+    ]
+  },
+  {
+    "created": "2025-05-26T09:21:12.044718Z",
+    "buy": [
+      {
+        "amount": "192105263",
+        "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+        "type": "ERC20"
+      }
+    ],
+    "sell": [
+      {
+        "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+        "token_id": "1081",
+        "type": "ERC721"
+      }
+    ]
+  },
+  {
+    "created": "2025-05-26T07:52:14.184643Z",
+    "buy": [
+      {
+        "amount": "2364912281",
+        "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+        "type": "ERC20"
+      }
+    ],
+    "sell": [
+      {
+        "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+        "token_id": "1472",
+        "type": "ERC721"
+      }
+    ]
+  },
+  {
+    "created": "2025-05-26T05:26:10.815543Z",
+    "buy": [
+      {
+        "amount": "217543860",
+        "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+        "type": "ERC20"
+      }
+    ],
+    "sell": [
+      {
+        "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+        "token_id": "2034",
+        "type": "ERC721"
+      }
+    ]
+  },
+  {
+    "created": "2025-05-26T03:21:02.754136Z",
+    "buy": [
+      {
+        "amount": "199000000",
+        "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+        "type": "ERC20"
+      }
+    ],
+    "sell": [
+      {
+        "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+        "token_id": "852",
+        "type": "ERC721"
+      }
+    ]
+  }
+]

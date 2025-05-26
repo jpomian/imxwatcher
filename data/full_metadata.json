@@ -1,0 +1,313 @@
+{
+  "page": {
+    "next_cursor": "eyJ0eXBlIjoibmV4dCIsIml0ZW0iOnsiaWQiOiIwMTk3MGE5Yi1hODQyLTU2ZjEtZjRmYy0wMDgyMmJjMzIzNDQiLCJjdXJyZW5jeV9hbW91bnRfcGVyX3Rva2VuIjoiMTk5MDAwMDAwIiwiY3JlYXRlZF9hdCI6IjIwMjUtMDUtMjZUMDM6MjE6MDIuNzU0MTM2WiIsInVwZGF0ZWRfYXQiOiIyMDI1LTA1LTI2VDAzOjIxOjAzLjA4NjE5OFoifX0",
+    "previous_cursor": null
+  },
+  "result": [
+    {
+      "account_address": "0x8912781a3c495b6bc9b280472be9fb1b0e4e4c8a",
+      "buy": [
+        {
+          "amount": "118421053",
+          "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+          "type": "ERC20"
+        }
+      ],
+      "chain": {
+        "id": "eip155:13371",
+        "name": "imtbl-zkevm-mainnet"
+      },
+      "created_at": "2025-05-26T10:21:52.421344Z",
+      "end_at": "2026-05-26T10:21:36Z",
+      "fees": [
+        {
+          "amount": "1184211",
+          "recipient_address": "0x73b6616316e6048284658f6bda58c17eb40db542",
+          "type": "MAKER_ECOSYSTEM"
+        },
+        {
+          "amount": "2368421",
+          "recipient_address": "0xb2f4dcc6b02293088d3362e78a4af0cd07c38b49",
+          "type": "PROTOCOL"
+        },
+        {
+          "amount": "11842105",
+          "recipient_address": "0xc382e9e8b38d1a15621b3fd855f623205bb92cea",
+          "type": "ROYALTY"
+        }
+      ],
+      "fill_status": {
+        "denominator": "0",
+        "numerator": "0"
+      },
+      "id": "01970c1c-efb7-3395-a9d4-41fc8fd32426",
+      "order_hash": "0xedb9985ab15561b0e08b29eb25fc29f71052c1db11dd2d68c8ce380308feb692",
+      "protocol_data": {
+        "counter": "0",
+        "order_type": "FULL_RESTRICTED",
+        "seaport_address": "0x6c12ad6f0bd274191075eb2e78d7da5ba6453424",
+        "seaport_version": "1.5",
+        "zone_address": "0x1004f9615e79462c711ff05a386bdba91a7628c3"
+      },
+      "salt": "0xf8a9505ccd6ed444",
+      "sell": [
+        {
+          "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+          "token_id": "863",
+          "type": "ERC721"
+        }
+      ],
+      "signature": "0x000200010a1e04e5c899395d1f8f680eb4ba9445c556a20f5c252eac9c8d61abbdc3207a4efeea0f8c79bb65d42e8f937668c8f3c0dd8842fddf513c6bf00b484c4bb28d1b020201cff469e561d9dce5b1185cd2ac1fa961f8fbde6100433452a06fcd5d28782e0d1e460c2b9959b7754959c54951357d72582d2c763b5e2b967c7cb6d55adf001accb7946497bbe1a4753170bb7efe183ac2c1c9be01461b0103",
+      "start_at": "2025-05-26T10:21:36Z",
+      "status": {
+        "name": "ACTIVE"
+      },
+      "type": "LISTING",
+      "updated_at": "2025-05-26T10:21:52.665698Z"
+    },
+    {
+      "account_address": "0x89006e5c00918aec7edacb40738b9962a9e1e21c",
+      "buy": [
+        {
+          "amount": "192105263",
+          "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+          "type": "ERC20"
+        }
+      ],
+      "chain": {
+        "id": "eip155:13371",
+        "name": "imtbl-zkevm-mainnet"
+      },
+      "created_at": "2025-05-26T09:21:12.044718Z",
+      "end_at": "2025-06-26T09:21:03Z",
+      "fees": [
+        {
+          "amount": "1921053",
+          "recipient_address": "0x73b6616316e6048284658f6bda58c17eb40db542",
+          "type": "MAKER_ECOSYSTEM"
+        },
+        {
+          "amount": "3842105",
+          "recipient_address": "0xb2f4dcc6b02293088d3362e78a4af0cd07c38b49",
+          "type": "PROTOCOL"
+        },
+        {
+          "amount": "19210526",
+          "recipient_address": "0xc382e9e8b38d1a15621b3fd855f623205bb92cea",
+          "type": "ROYALTY"
+        }
+      ],
+      "fill_status": {
+        "denominator": "0",
+        "numerator": "0"
+      },
+      "id": "01970be5-638b-aa61-3d67-d24322a811ee",
+      "order_hash": "0x03606d578143dcbd7b57b21a8145074992cb726f0ed360228a93d0fb4b110466",
+      "protocol_data": {
+        "counter": "0",
+        "order_type": "FULL_RESTRICTED",
+        "seaport_address": "0x6c12ad6f0bd274191075eb2e78d7da5ba6453424",
+        "seaport_version": "1.5",
+        "zone_address": "0x1004f9615e79462c711ff05a386bdba91a7628c3"
+      },
+      "salt": "0x9632fbdc9457876b",
+      "sell": [
+        {
+          "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+          "token_id": "1081",
+          "type": "ERC721"
+        }
+      ],
+      "signature": "0x00020001d7cde64dd54f1d5d076e69eb9b4dc401b231c2c01277ed7ed96a1481203dc593566a35a59369d23fe9a351ed0c5135765909ec92f9cd71fd861046e0da481ec91b020201cff469e561d9dce5b1185cd2ac1fa961f8fbde6100439993409d5239c2a1582d1d5a30957d84f9be115abb9d02a666b50e62d0f15a7861dd4b99ea470c6b78ef75d5cb2fc66986f28dbd47a015dcf9d4b64155ce0a6b1b0103",
+      "start_at": "2025-05-26T09:21:03Z",
+      "status": {
+        "name": "ACTIVE"
+      },
+      "type": "LISTING",
+      "updated_at": "2025-05-26T09:21:12.337151Z"
+    },
+    {
+      "account_address": "0x00fd999258f99378b63be5707143719c78e9e5b9",
+      "buy": [
+        {
+          "amount": "2364912281",
+          "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+          "type": "ERC20"
+        }
+      ],
+      "chain": {
+        "id": "eip155:13371",
+        "name": "imtbl-zkevm-mainnet"
+      },
+      "created_at": "2025-05-26T07:52:14.184643Z",
+      "end_at": "2026-05-26T07:52:04Z",
+      "fees": [
+        {
+          "amount": "23649123",
+          "recipient_address": "0x73b6616316e6048284658f6bda58c17eb40db542",
+          "type": "MAKER_ECOSYSTEM"
+        },
+        {
+          "amount": "47298245",
+          "recipient_address": "0xb2f4dcc6b02293088d3362e78a4af0cd07c38b49",
+          "type": "PROTOCOL"
+        },
+        {
+          "amount": "236491228",
+          "recipient_address": "0xc382e9e8b38d1a15621b3fd855f623205bb92cea",
+          "type": "ROYALTY"
+        }
+      ],
+      "fill_status": {
+        "denominator": "0",
+        "numerator": "0"
+      },
+      "id": "01970b93-f07a-d7be-1191-f0c4c487d8b8",
+      "order_hash": "0x2f041b1902838372f70c51b5c33bd79fffbb442b0405acf16a8cd020b5272f84",
+      "protocol_data": {
+        "counter": "0",
+        "order_type": "FULL_RESTRICTED",
+        "seaport_address": "0x6c12ad6f0bd274191075eb2e78d7da5ba6453424",
+        "seaport_version": "1.5",
+        "zone_address": "0x1004f9615e79462c711ff05a386bdba91a7628c3"
+      },
+      "salt": "0x2027da03fea1cb8c",
+      "sell": [
+        {
+          "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+          "token_id": "1472",
+          "type": "ERC721"
+        }
+      ],
+      "signature": "0x0002000191fd6fa54def5d9b153d66ff10a8fb8678928aeffa83f2b107d5be0bb061a5b224b3984abcdd174967d12d9e0e95564a2917a886dce43591654a86da246e9df91c020201cff469e561d9dce5b1185cd2ac1fa961f8fbde610043a86ab3b6fa58473fae1459fcd794291365db19b185999d234e7105b6bf1f49643b81883de1b9c73ebc90fddd45bd45e0091110110d03e9e42e51cb1ab88b7fc81c0103",
+      "start_at": "2025-05-26T07:52:04Z",
+      "status": {
+        "name": "ACTIVE"
+      },
+      "type": "LISTING",
+      "updated_at": "2025-05-26T07:52:14.433047Z"
+    },
+    {
+      "account_address": "0x82132d2c49229283bc150f61b26b610dad7d7fcb",
+      "buy": [
+        {
+          "amount": "217543860",
+          "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+          "type": "ERC20"
+        }
+      ],
+      "chain": {
+        "id": "eip155:13371",
+        "name": "imtbl-zkevm-mainnet"
+      },
+      "created_at": "2025-05-26T05:26:10.815543Z",
+      "end_at": "2026-05-26T05:26:03Z",
+      "fees": [
+        {
+          "amount": "2175439",
+          "recipient_address": "0x73b6616316e6048284658f6bda58c17eb40db542",
+          "type": "MAKER_ECOSYSTEM"
+        },
+        {
+          "amount": "4350877",
+          "recipient_address": "0xb2f4dcc6b02293088d3362e78a4af0cd07c38b49",
+          "type": "PROTOCOL"
+        },
+        {
+          "amount": "21754386",
+          "recipient_address": "0xc382e9e8b38d1a15621b3fd855f623205bb92cea",
+          "type": "ROYALTY"
+        }
+      ],
+      "fill_status": {
+        "denominator": "0",
+        "numerator": "0"
+      },
+      "id": "01970b0e-3890-b048-382a-165496fd2f81",
+      "order_hash": "0x6c1962a5f4856f2994fdacedaff0e9b7d133c1e73ae0c00300f461600ef7ab20",
+      "protocol_data": {
+        "counter": "0",
+        "order_type": "FULL_RESTRICTED",
+        "seaport_address": "0x6c12ad6f0bd274191075eb2e78d7da5ba6453424",
+        "seaport_version": "1.5",
+        "zone_address": "0x1004f9615e79462c711ff05a386bdba91a7628c3"
+      },
+      "salt": "0xaaab39aa05c4c920",
+      "sell": [
+        {
+          "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+          "token_id": "2034",
+          "type": "ERC721"
+        }
+      ],
+      "signature": "0x00020001e443a3f43c7c900bcda784fd728119a021f5e87011c9679fdda1bd3fd45d751809b8c04ba14396918676bb762b64afdb78abf063d369e830467170ebe97387fd1c020201cff469e561d9dce5b1185cd2ac1fa961f8fbde61004323cb991b1d02f1c47234696c07e2a0278189785e361e79fdf6cea82d7c467f4018018ba568f103b1bd209d5362f71be8107d71fba9940d27e9875bea2b7107921c0103",
+      "start_at": "2025-05-26T05:26:03Z",
+      "status": {
+        "name": "ACTIVE"
+      },
+      "type": "LISTING",
+      "updated_at": "2025-05-26T05:26:11.066328Z"
+    },
+    {
+      "account_address": "0x61863771453d327e93c5e987e07c49c0a300d16c",
+      "buy": [
+        {
+          "amount": "199000000",
+          "contract_address": "0x6de8acc0d406837030ce4dd28e7c08c5a96a30d2",
+          "type": "ERC20"
+        }
+      ],
+      "chain": {
+        "id": "eip155:13371",
+        "name": "imtbl-zkevm-mainnet"
+      },
+      "created_at": "2025-05-26T03:21:02.754136Z",
+      "end_at": "2026-05-26T03:21:00Z",
+      "fees": [
+        {
+          "amount": "1990000",
+          "recipient_address": "0x73b6616316e6048284658f6bda58c17eb40db542",
+          "type": "MAKER_ECOSYSTEM"
+        },
+        {
+          "amount": "3980000",
+          "recipient_address": "0xb2f4dcc6b02293088d3362e78a4af0cd07c38b49",
+          "type": "PROTOCOL"
+        },
+        {
+          "amount": "19900000",
+          "recipient_address": "0xc382e9e8b38d1a15621b3fd855f623205bb92cea",
+          "type": "ROYALTY"
+        }
+      ],
+      "fill_status": {
+        "denominator": "0",
+        "numerator": "0"
+      },
+      "id": "01970a9b-a842-56f1-f4fc-00822bc32344",
+      "order_hash": "0x118a6376f7420a609d564e2a35248aa80c2ba5e936587f989bdb6b641bcd93f3",
+      "protocol_data": {
+        "counter": "0",
+        "order_type": "FULL_RESTRICTED",
+        "seaport_address": "0x6c12ad6f0bd274191075eb2e78d7da5ba6453424",
+        "seaport_version": "1.5",
+        "zone_address": "0x1004f9615e79462c711ff05a386bdba91a7628c3"
+      },
+      "salt": "0xba606fe7b5627bd6",
+      "sell": [
+        {
+          "contract_address": "0x62f2966c417df805d2bc3b685a87c2ab3800fee9",
+          "token_id": "852",
+          "type": "ERC721"
+        }
+      ],
+      "signature": "0xd43ae75ecae093550e0479c4659e4152139b6c5283fd10d1ecf75640ba74d3800f7d7cea0df05d9d3793a3d4fb95d6b36f7d8396eec3da0b760639bd482348f51c",
+      "start_at": "2025-05-26T03:21:00Z",
+      "status": {
+        "name": "ACTIVE"
+      },
+      "type": "LISTING",
+      "updated_at": "2025-05-26T03:21:03.086198Z"
+    }
+  ]
+}
