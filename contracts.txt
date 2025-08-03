@@ -1,0 +1,3 @@
+https://ravenquest.io/nft/data/land/tokenID
+https://guildofguardians.mypinata.cloud/ipfs/QmYxaiewUDBYiSErWELNxYvEVRB7skUNJwz4knuENqkNFE/tokenID
+GOGO contract add: 0x2B1618e3e2e871d334B60cbe802ed18E25eDfb0c
