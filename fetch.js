@@ -1,4 +1,3 @@
-import fs from 'fs';
 import tokens from './tokens.js'
 
 const PAYLOAD = 5;
@@ -59,7 +58,7 @@ function getTimeAgo(isoTimestamp) {
     return "just now";
 }
 
-async function processData() {
+export default async function processData() {
     try {
         const output = await fetchListings();
 
@@ -67,7 +66,6 @@ async function processData() {
    		if (!nft) return null;
     		return {
         		name: nft.name,
-        		image: nft.image,
         		rarity: nft.attributes?.find(a => a.trait_type === "Rarity")?.value || "Unknown",
         		perk: nft.attributes?.find(a => a.trait_type === "Perk")?.value || "None"
     		};
@@ -82,6 +80,7 @@ async function processData() {
                 return {
                     created: getTimeAgo(item.created_at),
                     id: tokenId,
+                    url: `https://tokentrove.com/collection/RavenQuestLand/zkEVM-${tokenId}?ref=MHgxYTI2ZjQyNzMyNjk4ODEzY2IwYjEwMmY3M2IyNjIxZGFjZjU4M2E2fHprZXZtLTAxOTg=`,
                     nft: filterData(uriData),
                     currency: getTokenSymbol(contractAddy),
                     price: (parseFloat(item.buy[0].amount) * 1e-6 * k).toFixed(2)
@@ -89,13 +88,11 @@ async function processData() {
             })
         );
 
-        fs.writeFileSync('data/full_metadata.json', JSON.stringify(output, null, 2));
-        fs.writeFileSync('data/nft_metadata.json', JSON.stringify(buySellData, null, 2));
-        console.log(JSON.stringify(buySellData, null, 2));
-        console.log("Done");
+        // fs.writeFileSync('data/full_metadata.json', JSON.stringify(output, null, 2));
+        // fs.writeFileSync('data/nft_metadata.json', JSON.stringify(buySellData, null, 2));
+        const exportedData = JSON.stringify(buySellData, null, 2);
+        return exportedData;
     } catch (error) {
         console.error("Error processing data:", error);
     }
 }
-
-processData();

@@ -1,19 +1,43 @@
 [
   {
-    "created": "1 hour ago",
-    "id": "206",
+    "created": "5 hours ago",
+    "id": "171",
+    "nft": {
+      "name": "Medium Estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
+      "rarity": "Rare",
+      "perk": "Ore Fields"
+    },
+    "currency": "USDC",
+    "price": "445.00"
+  },
+  {
+    "created": "6 hours ago",
+    "id": "1500",
+    "nft": {
+      "name": "Medium Estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
+      "rarity": "Grand",
+      "perk": "Mixing Grounds"
+    },
+    "currency": "USDC",
+    "price": "210.00"
+  },
+  {
+    "created": "9 hours ago",
+    "id": "991",
     "nft": {
       "name": "Small Estate",
       "image": "https://cdn.ravenquest.io/assets/tier-1-bVNQGKV0.webp",
       "rarity": "Common",
-      "perk": "Forest Fields"
+      "perk": "Smithing Grounds"
     },
     "currency": "USDC",
-    "price": "290.00"
+    "price": "240.00"
   },
   {
-    "created": "13 hours ago",
-    "id": "2000",
+    "created": "9 hours ago",
+    "id": "1538",
     "nft": {
       "name": "Small Estate",
       "image": "https://cdn.ravenquest.io/assets/tier-1-bVNQGKV0.webp",
@@ -21,11 +45,11 @@
       "perk": "Treasure Troves"
     },
     "currency": "USDC",
-    "price": "118.00"
+    "price": "125.00"
   },
   {
-    "created": "13 hours ago",
-    "id": "886",
+    "created": "9 hours ago",
+    "id": "661",
     "nft": {
       "name": "Small Estate",
       "image": "https://cdn.ravenquest.io/assets/tier-1-bVNQGKV0.webp",
@@ -33,30 +57,6 @@
       "perk": "Forest Fields"
     },
     "currency": "USDC",
-    "price": "119.00"
-  },
-  {
-    "created": "19 hours ago",
-    "id": "3217",
-    "nft": {
-      "name": "Medium Estate",
-      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
-      "rarity": "Uncommon",
-      "perk": "Fishing Ponds"
-    },
-    "currency": "USDC",
-    "price": "300.00"
-  },
-  {
-    "created": "19 hours ago",
-    "id": "2805",
-    "nft": {
-      "name": "Medium Estate",
-      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
-      "rarity": "Uncommon",
-      "perk": "Seasoning Grounds"
-    },
-    "currency": "USDC",
-    "price": "300.00"
+    "price": "125.00"
   }
 ]
