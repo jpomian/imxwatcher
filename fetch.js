@@ -1,7 +1,7 @@
 import tokens from './tokens.js'
 
 const PAYLOAD = 5;
-const k = 1.14;
+const k = 1.13;
 
 function getTokenSymbol(address) {
   const normalizedAddr = address.toLowerCase();
