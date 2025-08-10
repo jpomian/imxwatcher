@@ -70,7 +70,7 @@ export default async function processData(output) {
 	};
 
         const buySellData = await Promise.all(
-        output.result.map(async (item) => {
+        output.map(async (item) => {
                 const tokenId = item.sell[0].token_id;
                 const contractAddy = item.buy[0].contract_address;
                 const uriData = await getURI(tokenId);

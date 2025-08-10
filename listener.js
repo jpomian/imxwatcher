@@ -4,11 +4,11 @@ const LOCATION = 'https://api.immutable.com/v1/chains/imtbl-zkevm-mainnet/orders
 const CHECK_INTERVAL = 20000; // ms
 
 let seenListingIds = new Set();
+let output = [];
 
 export async function fetchData() {
     try {
         const response = await fetch(LOCATION);
-        let output = [];
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -28,20 +28,20 @@ export async function fetchData() {
         
         if (newListings.length > 0) {
             // Log each new listing in its original JSON structure
-            newListings.forEach(listing => {
-                console.log(JSON.stringify(listing, null, 2))
+            newListings.forEach(async (listing) => {
+                console.log(listing)
+                listing = listing.json();
+                console.log(listing)
+                await processData(listing);
+                output.push(listing)
             });
             
             // Add new IDs to the tracking set
             newListings.forEach(listing => seenListingIds.add(listing.id));
 
-            output.push(...newListings);
+            console.log(output);
 
-            const finalListings = await processData(output)
-
-            console.log(finalListings)
-
-            return finalListings
+            return JSON.stringify(output, null, 2);
         } else {
             return;
         }
