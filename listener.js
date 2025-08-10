@@ -1,120 +1,62 @@
-const TelegramBot = require('node-telegram-bot-api');
-const axios = require('axios');
-const fs = require('fs');
+import processData from './format.js';
 
-// Configuration
-const config = {
-  telegramToken: 'YOUR_BOT_TOKEN', // Replace with your bot token
-  chatId: 'YOUR_CHAT_ID',         // Replace with your chat ID
-  apiUrl: 'YOUR_API_ENDPOINT_URL', // API endpoint to monitor
-  checkInterval: 60000,           // 60 seconds between checks
-  stateFile: 'bot-state.json'     // File to store last known state
-};
+const LOCATION = 'https://api.immutable.com/v1/chains/imtbl-zkevm-mainnet/orders/listings?status=ACTIVE&sell_item_contract_address=0x62f2966c417DF805d2Bc3b685a87c2ab3800fee9&order_by=created_at&direction=desc&page_size=3';
+const CHECK_INTERVAL = 20000; // ms
 
-// Initialize Telegram bot
-const bot = new TelegramBot(config.telegramToken, { polling: false });
+let seenListingIds = new Set();
 
-// Load or initialize state
-let state = {
-  lastRecords: [],
-  lastCheck: null
-};
-
-try {
-  const savedState = fs.readFileSync(config.stateFile, 'utf8');
-  state = JSON.parse(savedState);
-  console.log('Loaded previous state');
-} catch (err) {
-  console.log('No previous state found, starting fresh');
-  saveState();
-}
-
-// Helper function to save state
-function saveState() {
-  fs.writeFileSync(config.stateFile, JSON.stringify(state), 'utf8');
-}
-
-// Fetch data from API
-async function fetchApiData() {
-  try {
-    const response = await axios.get(config.apiUrl);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching API data:', error.message);
-    return null;
-  }
-}
-
-// Compare current data with previous to find new records
-function findNewRecords(currentData) {
-  if (!Array.isArray(currentData)) {
-    console.log('API response is not an array');
-    return [];
-  }
-
-  if (state.lastRecords.length === 0) {
-    // First run, no previous data to compare
-    state.lastRecords = currentData;
-    saveState();
-    return [];
-  }
-
-  // Find records in currentData that aren't in lastRecords
-  // This assumes each record has a unique 'id' field - adjust as needed
-  const newRecords = currentData.filter(currentRecord => 
-    !state.lastRecords.some(lastRecord => 
-      JSON.stringify(lastRecord) === JSON.stringify(currentRecord)
-    )
-  );
-
-  // Update last known records
-  state.lastRecords = currentData;
-  state.lastCheck = new Date().toISOString();
-  saveState();
-
-  return newRecords;
-}
-
-// Send notification via Telegram
-async function sendNotification(record) {
-  const message = `📢 New record detected:\n\n${JSON.stringify(record, null, 2)}`;
-  try {
-    await bot.sendMessage(config.chatId, message);
-    console.log('Notification sent');
-  } catch (error) {
-    console.error('Error sending Telegram message:', error.message);
-  }
-}
-
-// Main monitoring function
-async function monitorApi() {
-  console.log(`Starting API monitor (checking every ${config.checkInterval/1000} seconds)`);
-  
-  setInterval(async () => {
-    console.log(`Checking API at ${new Date().toLocaleString()}`);
-    
-    const currentData = await fetchApiData();
-    if (currentData) {
-      const newRecords = findNewRecords(currentData);
-      
-      if (newRecords.length > 0) {
-        console.log(`Found ${newRecords.length} new records`);
-        for (const record of newRecords) {
-          await sendNotification(record);
+export async function fetchData() {
+    try {
+        const response = await fetch(LOCATION);
+        let output = [];
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
-      } else {
-        console.log('No new records found');
-      }
+        
+        const currentData = await response.json();
+        const currentListings = currentData.result;
+        
+        if (seenListingIds.size === 0) {
+            currentListings.forEach(listing => seenListingIds.add(listing.id));
+            console.log(`[${new Date().toISOString()}] Initial data loaded. Tracking ${currentListings.length} listings.`);
+            return;
+        }
+
+        // Find listings that haven't been seen before
+        const newListings = currentListings.filter(listing => !seenListingIds.has(listing.id));
+        
+        if (newListings.length > 0) {
+            // Log each new listing in its original JSON structure
+            newListings.forEach(listing => {
+                console.log(JSON.stringify(listing, null, 2))
+            });
+            
+            // Add new IDs to the tracking set
+            newListings.forEach(listing => seenListingIds.add(listing.id));
+
+            output.push(...newListings);
+
+            const finalListings = await processData(output)
+
+            console.log(finalListings)
+
+            return finalListings
+        } else {
+            return;
+        }
+    } catch (error) {
+        console.error(`[${new Date().toISOString()}] Error:`, error.message);
     }
-  }, config.checkInterval);
 }
 
-// Start the monitor
-monitorApi();
+fetchData();
 
-// Handle process termination
+const intervalId = setInterval(fetchData, CHECK_INTERVAL);
+
+// Clean up on process termination
 process.on('SIGINT', () => {
-  console.log('Saving state before exiting...');
-  saveState();
-  process.exit();
+    clearInterval(intervalId);
+    console.log('\nStopped monitoring. Exiting...');
+    process.exit();
 });

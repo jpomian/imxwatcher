@@ -58,10 +58,8 @@ function getTimeAgo(isoTimestamp) {
     return "just now";
 }
 
-export default async function processData() {
+export default async function processData(output) {
     try {
-        const output = await fetchListings();
-
         const filterData = (nft) => {
    		if (!nft) return null;
     		return {
