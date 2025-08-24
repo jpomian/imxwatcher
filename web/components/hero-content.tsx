@@ -34,7 +34,7 @@ export default function HeroContent() {
         {/* Buttons */}
         <a
           href="https://web.telegram.org/k/#@gogwatcher_bot"
-          className="relative px-10 py-3 mr-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-xs transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer group inline-block text-center no-underline"
+          className="relative px-10 py-3 mr-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-xs transition-all duration-200 hover:bg-white/10 hover:border-slate-800/70 cursor-pointer group inline-block text-center no-underline"
         >
           Start a bot
           <span className="flex items-center justify-center text-[10px] text-white/70 mt-1">

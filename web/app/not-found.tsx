@@ -25,14 +25,14 @@ export default function GlobalNotFound() {
          
 
           <div className="pt-8 border-t border-white/10">
-            <p className="text-white/60 text-sm mb-3">Your options are:</p>
+            <p className="text-white/60 text-sm mb-3">Now you can:</p>
             <div className="flex flex-wrap justify-center gap-2 text-sm">
               <Link href="/" className="text-white/80 hover:text-white underline underline-offset-2">
-                Visit Homepage
+                Go back to Homepage
               </Link>
               <span className="text-white/40">•</span>
-              <Link href="/contact" className="text-white/80 hover:text-white underline underline-offset-2">
-                Contact us about it on Discord
+              <Link href="https://discord.gg/3FUA5kv7QA" className="text-white/80 hover:text-white underline underline-offset-2">
+                Tell us on Discord #support
               </Link>
             </div>
           </div>

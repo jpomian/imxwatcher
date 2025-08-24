@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import IMXLogo from "../public/imx.png"
 
-export default function PulsingCircle() {
+export default function IMXCircle() {
   return (
     <div className="absolute bottom-8 right-8 z-30">
       <div className="relative w-20 h-20 flex items-center justify-center">

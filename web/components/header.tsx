@@ -7,10 +7,7 @@ export default function Header() {
   return (
     <header className="relative z-20 flex items-center justify-between p-6">
       {/* Logo */}
-      <div className="flex items-center w-36">
- 
-      </div>
-
+      <div className="flex items-center w-40"></div>
       {/* Navigation */}
       <nav className="flex items-center space-x-4 md:space-x-8">
         <a
@@ -34,15 +31,15 @@ export default function Header() {
       </nav>
 
       {/* Login Button Group with Arrow */}
-      <div id="gooey-btn" className="relative flex items-center group" style={{ filter: "url(#gooey-filter)" }}>
-        <button className="px-4 py-2 rounded-full bg-white text-black font-normal text-xs transition-all duration-300 hover:bg-white/90 cursor-pointer h-8 flex items-center z-10">
-          <span className="inline-flex items-center">
+      <div id="gooey-btn" className="relative flex items-center group">
+        <button className="px-4 py-6 sm:py-2 rounded-full group bg-white text-black hover:bg-slate-800 hover:text-white hover:scale-105 font-normal text-xs transition-all duration-300 cursor-pointer h-8 flex items-center z-10">
+          <span className="inline-flex items-center text-wrap md:text-nowrap">
             <Image
               src={IMXLogo}
               alt={"IMX Logo"}
               height={18}
               width={18}
-              className="invert-100 inline-block mr-2"
+              className="invert-100 inline-block mr-2 group-hover:group-enabled:invert-0 transition-all duration-300"
             />
             Login with Passport
           </span>
