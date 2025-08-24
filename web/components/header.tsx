@@ -1,0 +1,53 @@
+"use client"
+
+import Image from "next/image"
+import IMXLogo from "../public/imx.png"
+
+export default function Header() {
+  return (
+    <header className="relative z-20 flex items-center justify-between p-6">
+      {/* Logo */}
+      <div className="flex items-center w-36">
+ 
+      </div>
+
+      {/* Navigation */}
+      <nav className="flex items-center space-x-4 md:space-x-8">
+        <a
+          href="/about"
+          className="text-white/80 hover:text-white text-xs font-light px-3 py-2 rounded-full hover:bg-white/10 transition-all duration-200"
+        >
+          About
+        </a>
+        <a
+          href="/docs"
+          className="text-white/80 hover:text-white text-xs font-light px-3 py-2 rounded-full hover:bg-white/10 transition-all duration-200"
+        >
+          Documentation
+        </a>
+        <a
+          href="/plus"
+          className="text-white/80 hover:text-white text-xs font-light px-3 py-2 rounded-full hover:bg-yellow-400/20 transition-all duration-200"
+        >
+          Watcher+
+        </a>
+      </nav>
+
+      {/* Login Button Group with Arrow */}
+      <div id="gooey-btn" className="relative flex items-center group" style={{ filter: "url(#gooey-filter)" }}>
+        <button className="px-4 py-2 rounded-full bg-white text-black font-normal text-xs transition-all duration-300 hover:bg-white/90 cursor-pointer h-8 flex items-center z-10">
+          <span className="inline-flex items-center">
+            <Image
+              src={IMXLogo}
+              alt={"IMX Logo"}
+              height={18}
+              width={18}
+              className="invert-100 inline-block mr-2"
+            />
+            Login with Passport
+          </span>
+        </button>
+      </div>
+    </header>
+  )
+}
