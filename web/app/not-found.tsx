@@ -18,7 +18,7 @@ export default function GlobalNotFound() {
           <div className="space-y-4">
             <h2 className="text-2xl md:text-3xl text-white font-semibold">Page Not Found</h2>
             <p className="text-white/80 text-lg leading-relaxed max-w-md mx-auto">
-              The page you're looking for doesn't exist or has been moved to a different location.
+              The page you are looking for does not exist or has been moved to a different location.
             </p>
           </div>
 
