@@ -17,7 +17,7 @@ export default function Header() {
         />
         <a href='/' className="text-white/80 font-semibold text-lg group-hover:animate-pulse">IMX Watcher</a>
       </div>
-      <nav className="flex items-center space-x-4 md:space-x-8">
+      {/* <nav className="flex items-center space-x-4 md:space-x-8">
         <a
           href="/about"
           className="text-white/80 hover:text-white text-xs font-light px-3 py-2 rounded-full hover:bg-white/10 transition-all duration-200"
@@ -36,7 +36,7 @@ export default function Header() {
         >
           Watcher+
         </a>
-      </nav>
+      </nav> */}
 
       {/* Login Button Group with Arrow */}
       <div id="gooey-btn" className="relative flex items-center group">
