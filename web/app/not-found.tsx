@@ -25,7 +25,7 @@ export default function GlobalNotFound() {
          
 
           <div className="pt-8 border-t border-white/10">
-            <p className="text-white/60 text-sm mb-3">Now you can:</p>
+            <p className="text-white/60 text-sm mb-3">From here:</p>
             <div className="flex flex-wrap justify-center gap-2 text-sm">
               <Link href="/" className="text-white/80 hover:text-white underline underline-offset-2">
                 Go back to Homepage

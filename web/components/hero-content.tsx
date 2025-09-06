@@ -10,14 +10,14 @@ export default function HeroContent() {
             filter: "url(#glass-effect)",
           }}
         >
-          <span className="text-white/90 text-xs font-light relative z-10">📜 Try for free!</span>
+          <span className="text-white/90 text-xs font-light relative z-10">📜 Available for free!</span>
         </div>
       </div>
 
       <div className="text-center tracking-tight font-light text-white">
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-6xl md:leading-16 mb-3">
-          <span className="font-medium">IMX Watcher</span>
+        <h1 className="text-3xl md:text-5xl md:leading-16 mb-3">
+          <span className="font-medium">Gain instant market edge</span>
         </h1>
 
         {/* Description */}

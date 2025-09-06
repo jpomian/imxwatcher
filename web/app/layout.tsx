@@ -21,9 +21,9 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "IMX Watcher",
+  description: "Telegram bot that instantly informs about listings of your liking. Tailored for Immutable zkEVM",
+  generator: "Next.js",
 }
 
 export default function RootLayout({

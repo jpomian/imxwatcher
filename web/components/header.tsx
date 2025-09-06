@@ -1,14 +1,22 @@
-"use client"
-
 import Image from "next/image"
 import IMXLogo from "../public/imx.png"
+import Logo from "../public/stripy-tp.png"
+import { passportInstance } from '../utils/passport';
 
 export default function Header() {
   return (
-    <header className="relative z-20 flex items-center justify-between p-6">
+    <header className="relative z-20 flex items-center justify-between px-6 py-4">
       {/* Logo */}
-      <div className="flex items-center w-40"></div>
-      {/* Navigation */}
+      <div className="flex items-center gap-2 group p-0">
+        <Image
+        src={Logo}
+        alt={'IMX Watcher'}
+        width={60}
+        height={60}
+        className="inline-block transition-transform duration-200 group-hover:animate-pulse cursor-pointer"
+        />
+        <a href='/' className="text-white/80 font-semibold text-lg group-hover:animate-pulse">IMX Watcher</a>
+      </div>
       <nav className="flex items-center space-x-4 md:space-x-8">
         <a
           href="/about"
