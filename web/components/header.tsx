@@ -1,9 +1,15 @@
 import Image from "next/image"
+import Link from "next/link"
 import IMXLogo from "../public/imx.png"
 import Logo from "../public/stripy-tp.png"
-import { passportInstance } from '../utils/passport';
+// import { passportInstance } from '../utils/passport';
 
 export default function Header() {
+
+  const passportAlert = () => {
+    alert('Passport integration coming soon.\nSurprise for those who get here early.')
+  }
+
   return (
     <header className="relative z-20 flex items-center justify-between px-6 py-4">
       {/* Logo */}
@@ -15,7 +21,7 @@ export default function Header() {
         height={60}
         className="inline-block transition-transform duration-200 group-hover:animate-pulse cursor-pointer"
         />
-        <a href='/' className="text-white/80 font-semibold text-lg group-hover:animate-pulse">IMX Watcher</a>
+        <Link href='/' className="text-white/80 font-semibold text-lg group-hover:animate-pulse">IMX Watcher</Link>
       </div>
       {/* <nav className="flex items-center space-x-4 md:space-x-8">
         <a
@@ -40,7 +46,7 @@ export default function Header() {
 
       {/* Login Button Group with Arrow */}
       <div id="gooey-btn" className="relative flex items-center group">
-        <button className="px-4 py-6 sm:py-2 rounded-full group bg-white text-black hover:bg-slate-800 hover:text-white hover:scale-105 font-normal text-xs transition-all duration-300 cursor-pointer h-8 flex items-center z-10">
+        <button onClick={passportAlert} className="px-4 py-6 sm:py-2 rounded-full group bg-white text-black hover:bg-slate-800 hover:text-white hover:scale-105 font-normal text-xs transition-all duration-300 cursor-pointer h-8 flex items-center z-10">
           <span className="inline-flex items-center text-wrap md:text-nowrap">
             <Image
               src={IMXLogo}
