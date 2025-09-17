@@ -19,9 +19,9 @@ export default function Header() {
         alt={'IMX Watcher'}
         width={60}
         height={60}
-        className="inline-block transition-transform duration-200 group-hover:animate-pulse cursor-pointer"
+        className="inline-block transition-transform duration-200 group-hover:animate-pulse cursor-pointer mt-1"
         />
-        <Link href='/' className="text-white/80 font-semibold text-lg group-hover:animate-pulse">IMX Watcher</Link>
+        <Link href='/' className="text-white/80 font-semibold text-xl group-hover:animate-pulse">IMX Watcher</Link>
       </div>
       {/* <nav className="flex items-center space-x-4 md:space-x-8">
         <a
